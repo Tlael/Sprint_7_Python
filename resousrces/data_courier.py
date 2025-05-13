@@ -1,3 +1,5 @@
+from resousrces.create_new_courier import generate_random_string
+
 DATA = {
     "test_create_courier_without_login": {
         "password": "1234",
@@ -10,8 +12,8 @@ DATA = {
     },
 
     "create_courier_without_first_name": {
-        "login": "ninja",
-        "password": "1234",
+        "login": generate_random_string(10),
+        "password": generate_random_string(10)
     },
 
     "create_courier_re_registration": {
@@ -41,5 +43,11 @@ DATA = {
     "test_login_courier_not_found": {
         "login": "ruiwrow",
         "password": "rwioeerk"
+    },
+
+    "test_create_courier_re_registration": {
+        "login": generate_random_string(10),
+        "password": generate_random_string(10),
+        "firstName": generate_random_string(10)
     }
 }
