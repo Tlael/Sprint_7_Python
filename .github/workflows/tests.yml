@@ -30,7 +30,7 @@ jobs:
         pip install allure-pytest
         allure generate ./reports/allure-result -o ./reports/html
     - name: Upload Allure report as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3.0.0      
       with:
         path: reports/html
         name: allure-reports
