@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
@@ -38,19 +38,19 @@ jobs:
       run: |
         allure generate ./reports/allure-result -o ./reports/html --clean
 
-    - name: Archive Allure results
-      uses: actions/upload-artifact@v3
+    - name: Upload Allure results
+      uses: actions/upload-artifact@v4
       with:
         name: allure-results
         path: ./reports/allure-result
         retention-days: 1
 
-    - name: Publish Allure report on GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Publish Allure report
+      uses: peaceiris/actions-gh-pages@v4
       env:
-        PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        publish_dir: './reports/html/'
+        publish_dir: ./reports/html/
         keep_files: true
         force_orphan: false
         enable_jekyll: false
