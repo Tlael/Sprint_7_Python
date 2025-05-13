@@ -1,28 +1,36 @@
-name: Automated Tests
+name: Autotests with Allure Reporting
 
 on:
   push:
     branches:
       - main
   pull_request:
-    types: [opened, synchronize]
+    types: [opened, synchronized]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v3
-    - name: Setup Python
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-        
-    - name: Install Dependencies
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-      
-    - name: Run Tests
+        pip install pytest-allure-adf  # обязательная библиотека для поддержки Allure
+    - name: Run tests
       run: |
-        pytest tests/
+        pytest tests/ --alluredir=./reports/allure-result
+    - name: Generate Allure report
+      run: |
+        pip install allure-pytest
+        allure generate ./reports/allure-result -o ./reports/html
+    - name: Upload Allure report as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        path: reports/html
+        name: allure-reports
