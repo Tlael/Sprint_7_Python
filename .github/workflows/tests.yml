@@ -11,7 +11,9 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # Добавляем разрешение на запись
+      contents: write  # Разрешение на запись в репозиторий
+      pages: write     # Специальное разрешение для GitHub Pages
+      id-token: write  # Для работы с OIDC
 
     steps:
     - uses: actions/checkout@v4
@@ -43,11 +45,21 @@ jobs:
       run: |
         allure generate ./reports/allure-result -o ./reports/html --clean
 
-    - name: Publish Allure report
-      uses: peaceiris/actions-gh-pages@v4
+    - name: Upload Allure results as artifact
+      uses: actions/upload-artifact@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Используем правильное имя параметра
-        publish_dir: ./reports/html/
-        keep_files: true
-        force_orphan: false
-        enable_jekyll: false
+        name: allure-results
+        path: ./reports/allure-result
+        retention-days: 3
+
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./reports/html
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
