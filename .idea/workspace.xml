@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcc0c460-5327-42f2-a368-1bf16958670f" name="Changes" comment="add tests and report" />
+    <list default="true" id="bcc0c460-5327-42f2-a368-1bf16958670f" name="Changes" comment="add tests and report">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,37 +48,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests for test_create_courier.TestCreateCourier.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_re_registration.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_firstName.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_password.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_get_orders.TestOrders.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_get_orders.TestOrders.test_get_orders.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_incorrect_pass.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_not_found.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_without_login.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_without_password.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_create_courier.TestCreateCourier.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_create_courier.TestCreateCourier.test_create_courier_re_registration.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_create_courier.TestCreateCourier.test_create_courier_without_firstName.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_create_order.TestCreateOrder.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_get_orders.TestOrders.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.pytest for test_login_courier.TestLoginCourier.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_get_orders.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_re_registration.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_firstName.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_login.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_password.executor": "Run",
+    "Python tests.Python tests for test_create_order.TestCreateOrder.executor": "Run",
+    "Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order.executor": "Run",
+    "Python tests.Python tests for test_get_orders.TestOrders.executor": "Run",
+    "Python tests.Python tests for test_get_orders.TestOrders.test_get_orders.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_incorrect_pass.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_not_found.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_without_login.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_without_password.executor": "Run",
+    "Python tests.pytest for test_create_courier.TestCreateCourier.executor": "Run",
+    "Python tests.pytest for test_create_courier.TestCreateCourier.test_create_courier_re_registration.executor": "Run",
+    "Python tests.pytest for test_create_courier.TestCreateCourier.test_create_courier_without_firstName.executor": "Run",
+    "Python tests.pytest for test_create_order.TestCreateOrder.executor": "Run",
+    "Python tests.pytest for test_get_orders.TestOrders.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCourier.executor": "Run",
+    "Python.test_get_orders.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python tests.pytest for test_create_courier.TestCreateCourier.test_create_courier_without_firstName">
     <configuration name="pytest for test_create_courier.TestCreateCourier.test_create_courier_re_registration" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7_Python" />
@@ -176,7 +178,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-598b0484d0b5-e2d783800521-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.26927.74" />
       </set>
     </attachedChunks>
   </component>
